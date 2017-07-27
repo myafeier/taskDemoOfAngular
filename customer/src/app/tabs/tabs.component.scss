@@ -1,0 +1,26 @@
+
+nav{
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1030;
+
+  border-radius: 0;
+  border: 1px solid transparent;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  .container{
+    line-height: 4rem;
+    font-size: 1.5rem;
+    .row{
+      padding: 0;
+      div {
+        padding: 0px;
+        text-align: center;
+      }
+    }
+  }
+
+
+}
