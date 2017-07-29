@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<md-sidenav-container>
+  <!--支持左右2个sideNav-->
+  <!-- mode 有三种模式：over:默认，叠加到上面。 side:并排放到旁边。 push:=over+side -->
+  <!-- align 可选: start\end -->
+  <!--sideNav 有2个方法，open(),toggle()-->
+<md-sidenav #sidenav mode="over" align=“end”> 
+<app-sidebar></app-sidebar>
+</md-sidenav>
+<div class="site">
+  <header>
+    <app-header (toggle)="sidenav.toggle()"></app-header>
+  </header>
+  <main>
+  <router-outlet></router-outlet>
+  </main>
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</div>
+
+</md-sidenav-container>
+
+

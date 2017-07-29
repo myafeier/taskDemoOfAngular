@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+//潜入Material内嵌主体之一
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+html,body,app-root,md-sidenav-container,.site{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+//flex容器
+.site{
+    display: flex; 
+    flex-direction:column;  //column:纵向布局,row 横向布局
+}
+
+main{
+    flex: 1 0 auto; // 第一参数是放大几倍，第二个参数是:是否能缩小？，第三个参数：基线的宽度及高度。
+    // display: flex;
+    // flex-direction: row; //row左右排，column 上下排
+    // flex-wrap: wrap;
+    // justify-content: space-between;//横轴排列,flex-start左对齐，flex-end右对齐，center居中，space-between：平均分布占满容器，space-around：在容器中平均分布,
+    // align-content: flex-end;//纵轴排列, flex-start：顶部对齐，flex-end：底部对齐，,center居中,space-around,stretch：纵向撑满，baseline:按文字基线对齐。
+    // align-items: center;//在一行中纵轴如何排列
+}
+.fill-remaining-space{
+    // 使用flexbox填充剩余空间
+    flex:1 1 auto;
+}
+.full-width{
+    width: 100%;
+}
